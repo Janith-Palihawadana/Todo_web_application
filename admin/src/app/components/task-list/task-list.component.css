@@ -1,0 +1,30 @@
+.custom-card {
+  background-color: #e8e6e6;
+  text: black;
+}
+
+.custom-button{
+  color: black;
+}
+
+.vertical-line {
+  border-right: 2px solid #c5c1c1;
+}
+
+.pr-6{
+  padding-right: 130px;
+}
+
+.pl-6{
+  padding-left: 130px;
+}
+.custom-button {
+  border-color: black;
+  color: black;
+}
+
+.custom-button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
