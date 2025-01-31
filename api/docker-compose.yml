@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+    web:
+        image: app-name:latest
+        build:
+            target: web
+            context: .
+        # env_file:
+        #     - .env
+        ports:
+            - "8000:80"
+        volumes:
+            - .:/var/www/html
+
+
+    db:
+        image: mysql:5.7
+        container_name: mysql_db
+        restart: always
+        environment:
+            MYSQL_DATABASE: todo_data
+            MYSQL_ROOT_PASSWORD: 7d62e9b8fb74f504b6b70c5abdc1a040382f96cface5dc3812c3598a8a8db31c
+        ports:
+            - "3306:3306"
+        volumes:
+            - dbdata:/var/lib/mysql
+
+volumes:
+    dbdata:
