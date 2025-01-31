@@ -11,5 +11,5 @@ Route::group([
 ], function (){
     Route::get('/get_todo_list', [TaskController::class, 'getTodoList']);
     Route::Post('/create_todo', [TaskController::class, 'createTodo']);
-    Route::get('/complete_todo', [TaskController::class, 'completeTodo']);
+    Route::post('/complete_todo', [TaskController::class, 'completeTodo']);
 });

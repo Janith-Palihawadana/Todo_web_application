@@ -20,7 +20,7 @@ class ValidationService
     public static function completeTodoValidator($request)
     {
         return Validator::make($request, [
-            'task_ref' => 'required|string|exists:task,task_ref',
+            'task_id' => 'required|int|exists:task,id',
         ]);
     }
 }

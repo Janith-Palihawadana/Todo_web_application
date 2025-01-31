@@ -64,9 +64,9 @@ export class TaskListComponent {
     });
   }
 
-  completeTask(task_ref: any) {
+  completeTask(task_id: any) {
     this.spinner.show();
-    this.taskService.completeTodo(task_ref).subscribe({
+    this.taskService.completeTodo(task_id).subscribe({
       next:(response:any)=>{
         this._fetchData();
         this.spinner.hide();

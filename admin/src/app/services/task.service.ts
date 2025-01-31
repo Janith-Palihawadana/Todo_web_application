@@ -19,8 +19,7 @@ export class TaskService {
   createTodo(data:any) {
     return this.http.post(this.ApiUrl + 'tasks/create_todo', data);
   }
-
-  completeTodo(task_ref: any) {
-    return this.http.get(this.ApiUrl + 'tasks/complete_todo?task_ref=' + task_ref);
+  completeTodo(task_id: any) {
+    return this.http.post(this.ApiUrl + 'tasks/complete_todo', { task_id: task_id });
   }
 }
