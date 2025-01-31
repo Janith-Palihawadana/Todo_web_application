@@ -94,6 +94,9 @@ Run npm install - npm install
 Finally run - ng test
 
 
+This project include a Backend & Frontend Testing folder, where unit tests and integration tests for the backend generate image-related outputs, and unit tests for frontend components handle image processing and display.
+
+
 ## Notes
 
 - Backend service runs on `http://localhost:8080`
